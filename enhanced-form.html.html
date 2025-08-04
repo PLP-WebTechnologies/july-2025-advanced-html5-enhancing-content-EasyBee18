@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms/list/tables/validations</title>
+</head>
+<body>
+      <header>
+    <h1>Welcome to My Enhanced HTML5 Page</h1>
+    <p>This page demonstrates my ability and understanding of how to create lists, tables, and embedded media, with a well-structured and validated form using HTML5 only.</p>
+    <hr>
+  </header>
+
+  <main>
+    <!-- lists section -->
+    <section>
+      <h2>My Frontend Skills</h2>
+
+      <h3>Skills Overview</h3>
+      <p>Here are some of the key technologies I work with using <strong>unordered list</strong> to itemize them::</p>
+        <!-- unordered list -->
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript (ES6+)</li>
+        <li>Responsive Design</li>
+      </ul>
+
+      <h3>Web Development Process</h3>
+      <p>My typical workflow for building a web application using an <strong>ordered list</strong> to itemize them::</p>
+      <!-- ordered list -->
+      <ol>
+        <li>Plan Layout with Figma</li>
+        <li>Convert to HTML/CSS</li>
+        <li>Add JavaScript Interactivity</li>
+        <li>Test and Launch</li>
+      </ol>
+
+      <h3>Meaning of the below terms</h3>
+      <p>Understanding the core components of web development using a <strong>definition list</strong> to itemize them:</p>
+
+        <!-- definition list -->
+      <dl>
+        <dt>HTML</dt>
+        <dd>The structure of web content.</dd>
+        <dt>CSS</dt>
+        <dd>The style and design of the layout.</dd>
+        <dt>JavaScript</dt>
+        <dd>Adds dynamic functionality.</dd>
+      </dl>
+    </section>
+
+    <!-- skill section -->
+    <section>
+      <h2>Skill Proficiency Table</h2>
+      <p>Here is a summary of my skills and experience:</p>
+
+      <!-- skill proficiency in a table -->
+      <table border="1">
+        <thead> 
+          <tr>
+            <th>Skill</th>
+            <th>Level</th>
+            <th>Experience</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>HTML5</td>
+            <td>Advanced</td>
+            <td>2 Years</td>
+          </tr>
+          <tr>
+            <td>CSS3</td>
+            <td>Intermediate</td>
+            <td>1.5 Years</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Beginner</td>
+            <td>1 Year</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="2">Total Skills</td>
+            <td>3</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </section>
+
+    <!-- media section -->
+    <section>
+      <h2>Media Gallery</h2>
+
+      <!-- embedded image -->
+      <h3>Image</h3>
+      <img src="myself.jpg" width="100%" height="500px" alt="my picture">
+
+      <!-- embeded audio  -->
+      <h3>Audio</h3>
+      <audio controls>
+        <source src="audio.aac" type="audio/mpeg">
+         Your browser does not support the audio tag.
+      </audio>
+
+      <h3>Video</h3>
+      <video controls width="100%" height="">
+        <source src="hotreload.webm" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- form section -->
+    <section>
+      <h2>Feedback Form</h2>
+      <form action="#" method="POST">
+        <fieldset>
+            <legend><em>Personal Information</em></legend>
+
+                <label for="fullname"><strong>Full Name</strong></label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3"><br><br>
+
+                <label for="email"><strong>Email Address</strong></label><br>
+                <input type="email" id="email" name="email" placeholder="e.g. you@example.com" required autocomplete="email"><br><br>
+
+                <label for="phone"><strong>Phone Number</strong></label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="e.g. +2348012345678" maxlength="13">
+                
+                <br><br>
+                <label for="role"><strong>Preferred Role:</strong></label><br>
+                <select id="role" name="role" required>
+                    <option value="">-- Select a role --</option>
+                    <option value="frontend">Frontend Developer</option>
+                    <option value="backend">Backend Developer</option>
+                    <option value="fullstack">Fullstack Developer</option>
+                </select><br><br>
+
+                <label>
+                    <input type="checkbox" name="subscribe" checked readonly>
+                    Subscribe to updates (auto-selected)
+                </label><br><br>
+
+                <label for="portfolio"><strong>Portfolio URL:</strong></label><br>
+                <input type="url" id="portfolio" name="portfolio" placeholder="https://yourportfolio.com" required pattern="https?://.+"><br><br>
+                
+                <br><br>
+                <label for="message"> <strong>Your Message:</strong></label><br>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required maxlength="100%"></textarea>
+            <br><br>
+            <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <br><br>
+   <hr>
+
+    <!-- footer section -->
+  <footer>
+    <p>© 2025 Hanofi Isiaq Alabi | Frontend Developer Trainning @PLP Africa</p>
+    <br>
+  </footer>
+  <hr>
+</body>
+</body>
+</html>
